@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="../Assets/Images/Untitled.png">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        h4 {
+            font-size: 1.5em;
+            margin: 5px 0;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        form {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+        }
+
+        input[type="reset"],
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer small {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Error Makes Clever Academy 🚀</h1>
+        <h4>Training | Tech News | Freshers Guide</h4>
+        <p>Empowering young developers to level up their skills through training in software development technology</p>
+        <hr>
+    </header>
+    <center>
+        <h3>Registration From</h3>
+        <form>
+            <table>
+                <tr>
+                    <td>Name :</td><td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td>Age :</td> <td><input type="number" placeholder="Enter your age"></td>
+                </tr>
+                <tr>
+                    <td>Gender :</td><td><input type="radio" name="Gender" id="Gender">Male 
+                        <input type="radio" name="Gender" id="Gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email : </td> <td><input type="text" name="Email" id="Email" placeholder="Enter your mail id"></td>
+                </tr>
+
+                <tr>
+                    <td>Select a course</td> <td><select>
+                        <option value="Python Programming">Python Programming</option>
+                        <option value="Full Stack">Full Stack </option>
+                        <option value="Frontend">Frontend</option>
+                        <option value="Backend">Backend</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Upload Your Resume</td><td><input type="file" name="file" id="file"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" name="reset" id="reset"></td> <td><input type="submit" name="submit" id="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+    </center>
+</body>
+<footer>
+    <p><h3><a href="https://www.youtube.com/@freecodecamp">YouTube</a> | <a href="https://twitter.com/freeCodeCamp">Twitter</a></h3></p> 
+    <small>Copyright © EMC. All Rights Reserved.</small>
+</footer>
+</html>
